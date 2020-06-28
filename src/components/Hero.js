@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Banner from '../components/Banner';
+
 const Hero = ( {children, hero} ) => {
     return(
         <header className={hero}>
