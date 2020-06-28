@@ -7,11 +7,11 @@ class FeaturedRooms extends React.Component {
     static contextType = RoomContext;
 
     render() {
-        const value = this.context;
-        console.log(value);
+        const {name, greeting } = this.context;
+
         return(
             <>
-                <h1>Hello from featured rooms {value}</h1>
+                <h1>{greeting} {name} from featured rooms</h1>
             </>
         )
     }
